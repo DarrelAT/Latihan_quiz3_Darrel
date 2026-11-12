@@ -1,9 +1,9 @@
 package latihanquiz3;
 
 class Product{
-    private String id;
-    private String nama;
-    private double harga;
+    public String id;
+    public String nama;
+    public double harga;
 
     public Product(String id, String nama, double harga){
         this.id = id;
@@ -33,5 +33,9 @@ class Product{
 
     public double getHarga(double harga){
         return harga;
+    }
+
+    public String showPrint() {
+        return "[" + id + "] " + nama + "- Rp " + harga;
     }
 }
